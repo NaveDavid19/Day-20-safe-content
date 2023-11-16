@@ -32,3 +32,16 @@ function checkLogIn(enteredUser) {
     saveToStorage('currUser', currUser)
     return enteredUser
 }
+
+function setAdminData() {
+    var strHtml = ''
+    for (var i = 0; i < gUser.length; i++) {
+        strHtml += `<tr> 
+        <td>${gUser[i].username}</td>
+        <td>${gUser[i].password}</td>
+        <td>${gUser[i].lastLoginTime}</td>
+        <td>${gUser[i].isAdmin}</td>
+        </tr>`
+    }
+    return strHtml
+}
