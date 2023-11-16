@@ -1,4 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 h1 {
+    text-align: center;
+}
+
+section {
     text-align: center;
 }
 
@@ -14,6 +22,11 @@ button {
     background-color: rgb(65, 187, 65);
 }
 
+.log-in {
+    padding: 20px;
+}
+
 .secret-content {
     display: none;
+    text-align: center;
 }

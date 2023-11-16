@@ -36,3 +36,7 @@ function onLogOut() {
     onInit()
     localStorage.clear()
 }
+
+function onAdmin() {
+
+}

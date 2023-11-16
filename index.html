@@ -17,15 +17,20 @@
         <input class="user-name" type="text" placeholder="Enter Username">
         <span class="title">Password:</span>
         <input class="password" type="password" placeholder="Enter Password">
-        <button onclick="onLogIn()">Login</button>
+        <div class="log-in">
+            <button onclick="onLogIn()">Login</button>
+        </div>
     </section>
     <div class="secret-content">
         <h3></h3>
-        <img src="img/puki.jpeg" alt="">
+        <div>
+            <img src="img/puki.jpeg" alt="">
+        </div>
         <button class="log-out" onclick="onLogOut()">Log Out!</button>
     </div>
 
 </body>
+<script src="js/services/utils.service.js"></script>
 <script src="js/services/storage.service.js"></script>
 <script src="js/services/safeContent.service.js"></script>
 <script src="js/safeContent.controller.js"></script>
