@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Content</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <h1>Safe Content</h1>
+
+    <section class="login">
+        <h2>Sign in!</h2>
+        <span class="title">Username:</span>
+        <input class="user-name" type="text" placeholder="Enter Username">
+        <span class="title">Password:</span>
+        <input class="password" type="password" placeholder="Enter Password">
+        <button onclick="onLogIn()">Login</button>
+    </section>
+    <div class="secret-content">
+        <h3></h3> <img src="img/puki.jpeg" alt="">
+
+    </div>
+
+</body>
+<script src="js/services/storage.service.js"></script>
+<script src="js/services/safeContent.service.js"></script>
+<script src="js/safeContent.controller.js"></script>
+
+</html>
