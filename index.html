@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body onload="onInit()">
     <h1>Safe Content</h1>
 
     <section class="login">
@@ -20,8 +20,9 @@
         <button onclick="onLogIn()">Login</button>
     </section>
     <div class="secret-content">
-        <h3></h3> <img src="img/puki.jpeg" alt="">
-
+        <h3></h3>
+        <img src="img/puki.jpeg" alt="">
+        <button class="log-out" onclick="onLogOut()">Log Out!</button>
     </div>
 
 </body>

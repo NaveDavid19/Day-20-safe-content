@@ -1,16 +1,21 @@
 'use strict'
 
-// function onInit() {
-
-// }
+function onInit() {
+    const elSignIn = document.querySelector('.login')
+    elSignIn.style.display = 'block'
+    const elSecretContent = document.querySelector('.secret-content')
+    elSecretContent.style.display = 'none'
+}
 
 function render(isUser, username) {
     if (!isUser) return
     const elSignIn = document.querySelector('.login')
     elSignIn.style.display = 'none'
+
     const elSecretContent = document.querySelector('.secret-content')
-    const elWelcome = document.querySelector('.secret-content h3')
     elSecretContent.style.display = 'block'
+
+    const elWelcome = document.querySelector('.secret-content h3')
     elWelcome.innerText = `welcome  ${username}`
 
 }
@@ -23,4 +28,11 @@ function onLogIn() {
         password: elPassword.value,
     }
     render(checkLogIn(user), user.username)
+    elUserName.value = ''
+    elPassword.value = ''
+}
+
+function onLogOut() {
+    onInit()
+    localStorage.clear()
 }
